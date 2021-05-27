@@ -1,0 +1,78 @@
+body {
+  background-color: #1a1a1a;
+  color: white;
+  display: flex;
+  margin: 0;
+  font-family: "Cabin", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar-nav {
+  width: 240px;
+  padding: 16px;
+  height: 100vh;
+}
+
+#logo svg {
+  height: 50px;
+  padding-bottom: 16px;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.menu li {
+  padding: 16px;
+  cursor: pointer;
+}
+.menu li.selected {
+  background-color: #1a1a1a;
+}
+
+.menu i {
+  font-size: 24px;
+  padding-right: 16px;
+}
+
+.top-bar {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 25px;
+  height: 60px;
+  width: 100%;
+}
+
+.top-bar input {
+  padding-left: 48px;
+  width: 245px;
+  height: 45px;
+  border-radius: 50px;
+  border: none;
+}
+#top-bar-search {
+  position: relative;
+  background-color: white;
+  width: 290px;
+  height: 45px;
+  border-radius: 50px;
+}
+
+.top-bar .fa-search {
+  position: absolute;
+  top: 16px;
+  left: 8px;
+  color: black;
+}
+
+.top-bar .icons {
+  width: 10%;
+}
