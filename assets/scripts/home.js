@@ -1,7 +1,7 @@
 const fetchNewReleases = () => {
   SpotifyAPI.browseAllNewReleasesAsync()
     .then((data) => {
-      console.log("data", data);
+      // console.log("data", data);
 
       //Create one card per item
       const albums = data.albums.items
@@ -24,7 +24,7 @@ const fetchNewReleases = () => {
         .join(" ");
       const targetDiv = document.querySelector(".row.app");
       targetDiv.innerHTML += albums;
-      console.log("albums", albums);
+      // console.log("albums", albums);
     })
     .catch((e) => {
       console.log(e);

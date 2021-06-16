@@ -63,50 +63,55 @@
         </div>
 
         <div id="top-bar-search">
-          <input type="text" />
+          <input id="search" type="text" oninput="search()" />
           <i class="fas fa-search"></i>
         </div>
       </div>
-      <div class="row app">
-        <h2>Top genres</h2>
-        <div class="top-genres">
-          <a class="grid-item bg-green" href="/pop">
-            <h3>Pop</h3>
-            <img
-              src="https://t.scdn.co/images/d355f48a90b64c25b6e004179a596e51.jpeg"
-              alt="pop"
-            />
-          </a>
-          <a class="grid-item bg-red" href="/rock">
-            <h3>Rock</h3>
-            <img
-              class="item-img"
-              src="https://t.scdn.co/images/31c85ae6fec34a16927ef28a7a88e97b.jpeg"
-              alt=""
-            />
-          </a>
-          <a class="grid-item bg-green" href="/pop">
-            <h3>Pop</h3>
-            <img
-              src="https://t.scdn.co/images/d355f48a90b64c25b6e004179a596e51.jpeg"
-              alt="pop"
-            />
-          </a>
-          <a class="grid-item bg-red" href="/rock">
-            <h3>Rock</h3>
-            <img
-              class="item-img"
-              src="https://t.scdn.co/images/31c85ae6fec34a16927ef28a7a88e97b.jpeg"
-              alt=""
-            />
-          </a>
+      <div id="searchIndex">
+        <div class="row app">
+          <h2>Top genres</h2>
+          <div class="top-genres">
+            <a class="grid-item bg-green" href="/pop">
+              <h3>Pop</h3>
+              <img
+                src="https://t.scdn.co/images/d355f48a90b64c25b6e004179a596e51.jpeg"
+                alt="pop"
+              />
+            </a>
+            <a class="grid-item bg-red" href="/rock">
+              <h3>Rock</h3>
+              <img
+                class="item-img"
+                src="https://t.scdn.co/images/31c85ae6fec34a16927ef28a7a88e97b.jpeg"
+                alt=""
+              />
+            </a>
+            <a class="grid-item bg-green" href="/pop">
+              <h3>Pop</h3>
+              <img
+                src="https://t.scdn.co/images/d355f48a90b64c25b6e004179a596e51.jpeg"
+                alt="pop"
+              />
+            </a>
+            <a class="grid-item bg-red" href="/rock">
+              <h3>Rock</h3>
+              <img
+                class="item-img"
+                src="https://t.scdn.co/images/31c85ae6fec34a16927ef28a7a88e97b.jpeg"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+        <div class="row app">
+          <h2>Browse all</h2>
+          <div class="browse-all"></div>
         </div>
       </div>
-      <div class="row app">
-        <h2>Browse all</h2>
-        <div class="browse-all"></div>
-      </div>
+      <div class="results"></div>
     </main>
-    <script src="./assets/scripts/search.js"></script>
+    <script src="./assets/scripts/searchIndex.js"></script>
+    <script src="./assets/scripts/spotify-api.js"></script>
+    <script src="./assets/scripts/searchResults.js"></script>
   </body>
 </html>

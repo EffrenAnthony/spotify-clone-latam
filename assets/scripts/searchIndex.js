@@ -83,5 +83,5 @@ const html = browseAllItems
         </a>`;
   })
   .join(" ");
-console.log("ht", html);
+
 browseAllDiv.innerHTML = html;
